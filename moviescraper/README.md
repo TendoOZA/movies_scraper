@@ -1,32 +1,34 @@
 🎬 Movies Scraper
 📌 Overview
 
-This project is a web scraping tool built with Scrapy
-.
-It extracts data about movies, directors, cast, genres, and notes from the Wikipedia page:
-List of American films of 2023
-.
+This project is a web scraping tool built with Scrapy.It extracts data about movies, directors, cast, genres, and notes from the Wikipedia page:
+List of American films of 2023.
+
 
 The scraped data is stored in a clean CSV file for analysis, visualization, or portfolio use.
 
 ⚙️ Technologies Used
 
-Python 3.x
+* Python 3.x
 
-Scrapy Framework
+* Scrapy Framework
 
-XPath Selectors
+* XPath Selectors
 
-CSV Output
+* CSV Output
+
+
+
 
 🚀 How it Works
 
-The Scrapy spider sends a request to the Wikipedia page.
+The Scrapy spider:
 
-It parses all wikitable tables on the page.
+1. Sends a request to the Wikipedia page.
 
-Extracts:
+2. Parses all wikitable tables on the page.
 
+3. Extracts:
 🎬 Movie Title
 
 🎥 Director
@@ -37,27 +39,32 @@ Extracts:
 
 📝 Notes (if available)
 
-Saves the extracted data to a CSV file.
+4. Saves the extracted data to a CSV file.
+
 
 📂 Project Structure
-
-moviescraper/
+movies-scraper/
 │
-├── moviescraper/ # Scrapy project folder
-│ ├── spiders/ # Contains the spider file
-│ │ └── imdb_wiki.py
-│ ├── items.py
-│ ├── pipelines.py
-│ └── settings.py
+├── moviescraper/              # Scrapy project folder
+│   ├── spiders/                # Contains the spider file
+│   │   └── imdb_wiki.py
+│   ├── items.py
+│   ├── pipelines.py
+│   └── settings.py
 │
-├── movies.csv # Final scraped data
-└── README.md # Project documentation
+├── movies.csv                  # Final scraped data
+└── README.md                   # Project documentation
 
-📊 Example Output
-Title	Director	Cast	Genre	Notes
-The Old Way	Saban Films	Nicolas Cage	—	[4]
-House Party	Warner Bros. Pictures	Calmatic, Stephen Glover, Tosin Cole	—	[7]
-Sick	Peacock	John Hyams, Kevin Williamson, Gideon Adlon	—	[8]
+
+
+| Title       | Director     | Cast                                       | Genre | Notes |
+| ----------- | ------------ | ------------------------------------------ | ----- | ----- |
+| The Old Way | Saban Films  | Nicolas Cage                               | —     | \[4]  |
+| House Party | Warner Bros. | Calmatic, Stephen Glover, Tosin Cole       | —     | \[7]  |
+| Sick        | Peacock      | John Hyams, Kevin Williamson, Gideon Adlon | —     | \[8]  |
+
+
+
 📎 How to Run
 
 Clone the repository:
@@ -67,7 +74,7 @@ git clone https://github.com/your-username/movies-scraper.git
 
 Navigate into the project folder:
 
-cd moviescraper
+cd movies-scraper
 
 
 Run the spider:
@@ -76,18 +83,19 @@ scrapy crawl imdb_wiki -o movies.csv
 
 ⭐ Future Improvements
 
-Include release year and movie ratings.
+* Include release year and movie ratings.
 
-Add more years or expand to international movies.
+* Add more years or expand to international movies.
 
-Visualize data using Matplotlib / Seaborn.
+* Visualize data using Matplotlib / Seaborn.
 
-Store data in a database (SQLite / MongoDB) for larger datasets.
+* Store data in a database (SQLite / MongoDB) for larger datasets.
 
-👤 Author
+👤 Author:
+     Tendo
 
-Your Name
+📧 Email:
+     tendooza123@gmail.com
 
-📧 Email: your.email@example.com
-
-🔗 LinkedIn  | GitHub
+🔗 GitHub:
+     TendoOZA
